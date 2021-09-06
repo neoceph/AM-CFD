@@ -1,5 +1,5 @@
 ##Northwestern Thermosolutal Flow Code (C++) --BetaVersion
-Updated:September 6th, 2021
+Updated:09/06/21
 ---
 **Installation 
 ---
