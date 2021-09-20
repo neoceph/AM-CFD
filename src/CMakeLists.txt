@@ -1,5 +1,9 @@
 set(BINARY ${CMAKE_PROJECT_NAME})
 
+# set C++ compiler flags 
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -std=c++11")
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g")
+
 # check if openMP compilers are available and link them
 find_package(OpenMP 4.0 REQUIRED)
 if (OPENMP_FOUND)
