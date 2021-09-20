@@ -1,5 +1,5 @@
-##Northwestern Thermosolutal Flow Code (C++) --BetaVersion
-Updated:09/06/21
+##Northwestern AM-CFD Code (C++) --BetaVersion
+developed by Abdullah Al Amin. email: abdullah.amin@northwestern.edu
 ---
 **Installation 
 ---
