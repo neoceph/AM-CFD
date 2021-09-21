@@ -65,7 +65,7 @@ CFDSolverManager::generateGrid()
     std::vector <double> oldz(z_, z_+nk);
     
     //declare strings for test
-    string timeFileOutput, filename;
+    // string timeFileOutput, filename;
 
 
     
@@ -598,7 +598,7 @@ CFDSolverManager::iterativeLoopSolve()
     double ratio;
     double amaxres = 0.0;
     double alenold = bcMgr_->alen_; 
-    string filename, timeFileOutput;
+    // string filename, timeFileOutput;
 
     // intialize the number of iterations to zero
     niter_ = 0;
@@ -2767,7 +2767,7 @@ CFDSolverManager::remapSolutions(const vector <double> &oldx, const vector <doub
     int nk = domainMgr_->nk_;
     double newXCoordinate[ni*nj*nk], newYCoordinate[ni*nj*nk], newZCoordinate[ni*nj*nk], oldXCoordinate[ni*nj*nk], oldYCoordinate[ni*nj*nk], oldZCoordinate[ni*nj*nk];
     int dimensionOfDomain[] = {ni, nj, nk}, lengthOfFlattenDimension = ni*nj*nk, locationIndex[ni][nj][nk], ySortedlocationIndex[ni*nj*nk], location;
-    string timeFileOutput, filename;
+    // string timeFileOutput, filename;
 
 
 
