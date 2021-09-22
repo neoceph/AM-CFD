@@ -76,7 +76,7 @@ class CFDSolverManager
         double rho_[_nz_*_ny_*_nx_];
         double solfrac_[_nz_*_ny_*_nx_];
           // residual error of velocities, mass and enthalpy
-	double resoru_, resorv_, resorw_, resorm_, resorh_;
+	      double resoru_, resorv_, resorw_, resorm_, resorh_;
           // number of iterations
         int itertot_, niter_;
           // indicator for initialization
@@ -86,6 +86,9 @@ class CFDSolverManager
         double avgconcentrationnot_[_nz_*_ny_*_nx_];
         double concentration_[_nz_*_ny_*_nx_];
         double resorc_;
+
+        // variables for remapping
+        double newXCoordinate[_nz_*_ny_*_nx_], newYCoordinate[_nz_*_ny_*_nx_], newZCoordinate[_nz_*_ny_*_nx_], oldXCoordinate[_nz_*_ny_*_nx_], oldYCoordinate[_nz_*_ny_*_nx_], oldZCoordinate[_nz_*_ny_*_nx_];
 
         // Local functions/subroutines
         void generateGrid();
