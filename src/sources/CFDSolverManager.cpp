@@ -2765,15 +2765,14 @@ CFDSolverManager::remapSolutions(const vector <double> &oldx, const vector <doub
     int ni = domainMgr_->ni_;
     int nj = domainMgr_->nj_;
     int nk = domainMgr_->nk_;
-    double newXCoordinate[ni*nj*nk], newYCoordinate[ni*nj*nk], newZCoordinate[ni*nj*nk], oldXCoordinate[ni*nj*nk], oldYCoordinate[ni*nj*nk], oldZCoordinate[ni*nj*nk];
-    int dimensionOfDomain[] = {ni, nj, nk}, lengthOfFlattenDimension = ni*nj*nk, locationIndex[ni][nj][nk], ySortedlocationIndex[ni*nj*nk], location;
+    // int dimensionOfDomain[] = {ni, nj, nk}, lengthOfFlattenDimension = ni*nj*nk, locationIndex[ni][nj][nk], ySortedlocationIndex[ni*nj*nk], location;
     // string timeFileOutput, filename;
 
 
 
     // mapping old and new coordinate from DomainManager coordinate index
 
-    for (int count=0; count<lengthOfFlattenDimension; count++)
+    for (int count=0; count<ni*nj*nk; count++)
     {
         oldXCoordinate[count] = oldx[this->domainMgr_->coordinateIndex[count][0]];
         oldYCoordinate[count] = oldy[this->domainMgr_->coordinateIndex[count][1]];
