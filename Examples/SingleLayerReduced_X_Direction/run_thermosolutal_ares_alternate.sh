@@ -6,9 +6,9 @@ logString="Log_MultiLayer"
 export OMP_NUM_THREADS=2
 
 # Provide appropiate paths
-execDirec="./../../../../build/"
-execFile="ThermosolutalCFD"
-inputDirec="../../InputFiles/"
+execDirec="../../build/src/"
+execFile="AM-CFD_run"
+inputDirec="./resources/"
 
 # Define the name of the logfile
 logAppend=".log"
@@ -16,7 +16,7 @@ logAppend=".log"
 # Set up the full file names/paths
 fileI=$inputNames
 printf "Running %s file\n" $fileI
-logFileName="$logString$logAppend"
+logFileName="$outputDirectory$logString$logAppend"
 inputI=$inputDirec$fileI
 
 # run the simulation
