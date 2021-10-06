@@ -56,6 +56,6 @@ $ beta  dgdtp  darcyKo  a_oxygen
 *ACTIVATE_MOVING_MESH
   2 2
 *MESH_FILE
-../Examples/SingleLayerReduced_Final/MeshFiles/multiTrackmesh_01x01.k
+../Examples/SingleLayerReduced_X_Direction/resources/multiTrackmesh_01x01.k
 *TOOLPATH_FILE
-../Examples/SingleLayerReduced_Final/ToolFiles/MultiLayerTest.crs
+../Examples/SingleLayerReduced_X_Direction/resources/MultiLayerTest.crs
