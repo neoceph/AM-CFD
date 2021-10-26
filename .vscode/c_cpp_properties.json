@@ -4,7 +4,8 @@
             "name": "Linux",
             "includePath": [
                 "${default}",
-                "./src/headers"
+                "./src/headers",
+                "./libs/googletest/googletest/include"
             ],
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "gnu11",

@@ -20,6 +20,17 @@ enable_testing()
 
 include_directories("${CMAKE_SOURCE_DIR}/src/headers")
 
+set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 add_subdirectory(src)
 add_subdirectory(test)
-add_subdirectory(libs/googletest)
+add_subdirectory(libs/googletest EXCLUDE_FROM_ALL)
+#add_subdirectory(libs/googletest)
+
+include(InstallRequiredSystemLibraries)
+set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/License.txt")
+set(CPACK_PACKAGE_VERSION_MAJOR "${Tutorial_VERSION_MAJOR}")
+set(CPACK_PACKAGE_VERSION_MINOR "${Tutorial_VERSION_MINOR}")
+
+install(TARGETS ${Project})
+
+include(CPack)
