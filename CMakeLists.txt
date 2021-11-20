@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.21.3)
 
 set(Project AM-CFD)
 set(ProjectLib AM-CFD_lib)
