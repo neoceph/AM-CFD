@@ -7,7 +7,7 @@
             "request": "launch",
             // Resolved by CMake Tools:
             "program": "${command:cmake.launchTargetPath}",
-            "args": ["../Examples/SingleLayerReduced_Y_Direction_reversed/InputFiles/inputfile_MultiLayer_debug.k"],
+            "args": ["../Examples/SingleLayerReduced_X_Direction/resources/inputfile_MultiLayer_debug.k"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}/build",
             "environment": [

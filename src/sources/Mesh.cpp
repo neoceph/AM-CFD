@@ -10,10 +10,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <ctype.h>
-#include "Mesh.h"
 #include <iomanip>
 #include <chrono>
 #include <ctime>
+
+// user-defined headers
+#include <Mesh.h>
 
 //////////////////////////////////////////////////////
 //		Constructor			    //

@@ -16,8 +16,8 @@ endif()
 file(GLOB SOURCES "${CMAKE_SOURCE_DIR}/src/sources/*.cpp")
 file(GLOB HEADERS "${CMAKE_SOURCE_DIR}/src/headers/*.h")
 
-add_executable(${BINARY}_run main.cpp)
+add_executable(${BINARY} main.cpp)
 
 add_library(${BINARY}_lib ${SOURCES} ${HEADERS})
 message(STATUS "SOURCES = ${HEADERS}")
-target_link_libraries(${BINARY}_run ${BINARY}_lib)
+target_link_libraries(${BINARY} ${BINARY}_lib)

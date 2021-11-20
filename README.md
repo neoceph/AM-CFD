@@ -10,3 +10,7 @@ developed by Abdullah Al Amin. email: abdullah.amin@northwestern.edu
 5. Compile the code {"make -j4"}
 
 #Warning: OpenMp Version 4.0 or greater is REQUIRED!
+
+##Building the distribution package
+1. Build the project by either clicking the 'Build' button on the VSCode bottom ribbon or the usual CMake build process.
+2. go into the ./build directory and execute 'cpack' comman. It will generate the 'ProgramName-version.number-Linux.sh'. 
