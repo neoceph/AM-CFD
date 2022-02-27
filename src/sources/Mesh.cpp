@@ -206,6 +206,13 @@ void Mesh::getDomainInfo()
                 outputsection_ = true;
                 continue;
             }
+            else if(line == "*VOLUMETRIC_HEAT_SOURCE_TABLE")
+            {
+                option = 30;
+                volheatsource_ = true;
+                volheatsourcetable_ = true;
+                continue;
+            }
             else if(line.front() == '*') 
             {
                 option = -1;
@@ -403,6 +410,12 @@ void Mesh::getDomainInfo()
                 vector<double> coords((istream_iterator<double>(lines)), istream_iterator<double>());
                 for (int ii = 0; ii < coords.size(); ++ii)
                     outputsection_params_.push_back(coords[ii]);
+            }// option 29
+            else if(option == 30)	// *VOLUMETRIC_HEAT_SOURCE_TABLE
+            {
+                istringstream lines(line);
+                vector<string> coords((istream_iterator<string>(lines)), istream_iterator<string>());
+                heatSourceFileName_ = coords[0]; 
             }// option 29
         }//end option conditional loops
     }//end if 

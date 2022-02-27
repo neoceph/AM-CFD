@@ -40,6 +40,7 @@ class Mesh
         std::string toolFileName_;
         std::string outFileName_;
         std::string meshFileName_;
+        std::string heatSourceFileName_;
         std::string directoryName_ = "Results";
         std::string tectype_;
         std::string geomOutName_;
@@ -58,6 +59,7 @@ class Mesh
         bool foundMesh_ = false;
         bool powderbed_ = false;
         bool volheatsource_ = false;
+        bool volheatsourcetable_ = false;
         bool gaussheatsource_ = false;
         bool outputgeom_ = false;
         bool outputsection_ = false;

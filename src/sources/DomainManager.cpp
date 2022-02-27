@@ -164,12 +164,25 @@ DomainManager::assignInputValues()
     // volumetric heat source parameters 
     if(meshObj_->volheatsource_)
     {
-        avolpow_ = meshObj_->volheatsource_params_[0];
-        apowseta_ = meshObj_->volheatsource_params_[1];
-        heatthick_ = meshObj_->volheatsource_params_[2];
-        heatrb_ = meshObj_->volheatsource_params_[3];
-        avolfact_ = meshObj_->volheatsource_params_[4];
-        vector<double>().swap(meshObj_->volheatsource_params_); 
+        if (!meshObj_->volheatsourcetable_)
+        {
+            avolpow_ = meshObj_->volheatsource_params_[0];
+            apowseta_ = meshObj_->volheatsource_params_[1];
+            heatthick_ = meshObj_->volheatsource_params_[2];
+            heatrb_ = meshObj_->volheatsource_params_[3];
+            avolfact_ = meshObj_->volheatsource_params_[4];
+            vector<double>().swap(meshObj_->volheatsource_params_); 
+        }
+        else 
+        {
+            getHeatSourceParameters();
+            avolpow_ = heatSourceParameterValues[0][1];
+            apowseta_ = heatSourceParameterValues[0][2];
+            heatthick_ = heatSourceParameterValues[0][3];
+            heatrb_ = heatSourceParameterValues[0][4];
+            avolfact_ = heatSourceParameterValues[0][5];
+            vector<double>().swap(meshObj_->volheatsource_params_); 
+        }
     }//end if
 
     // output section parameters
@@ -269,6 +282,29 @@ DomainManager::getToolpath()
             int state = (int)coords[4];
             laserOn_.push_back(state);
             tooltxyz_.push_back(txyz);
+        }//end while
+    }//end if
+}//end getToolpath
+
+
+//////////////////////////////////////////////////////
+//		getHeatSourceParameters()			    //
+//////////////////////////////////////////////////////
+void
+DomainManager::getHeatSourceParameters()
+{
+    ifstream file;
+    file.open(meshObj_->heatSourceFileName_.c_str());
+    string line;
+    if (file.is_open())
+    {
+        while(getline(file, line))
+        {
+            istringstream lines(line);
+            vector<double> coords((istream_iterator<double>(lines)), istream_iterator<double>());
+            vector<double> parameterValues(coords.begin(), coords.end());
+
+            heatSourceParameterValues.push_back(parameterValues);
         }//end while
     }//end if
 }//end getToolpath

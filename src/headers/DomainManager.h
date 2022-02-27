@@ -64,6 +64,8 @@ class DomainManager
           // toolpath vectors for GAMMA formated file
         vector< vector<double>> tooltxyz_;
         vector<int> laserOn_;
+        // vector for reading heat source parameter as an input
+        vector< vector<double>> heatSourceParameterValues;
           // outputting a section of the domain: box dimensions and output time
         double gxmin_, gymin_, gzmin_, gxmax_, gymax_, gzmax_, toutsect_;
           // tracker to know when simulation is finished
@@ -73,6 +75,8 @@ class DomainManager
         void assignInputValues();
 
         void getToolpath();
+        
+        void getHeatSourceParameters();
 };
 
         // global maximum node numbers (for performance)
