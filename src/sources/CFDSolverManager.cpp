@@ -1701,7 +1701,7 @@ CFDSolverManager::calculateSource(int &ivar)
 
             else
             {
-                if (domainMgr_->timet_ > domainMgr_->heatSourceParameterValues[heatSourceTableIterator][0] && heatSourceTableIterator < heatSourceTableSize)
+                if (domainMgr_->timet_ > domainMgr_->heatSourceParameterValues[heatSourceTableIterator][0] && heatSourceTableIterator < heatSourceTableSize-1)
                     heatSourceTableIterator += 1;
                                 
                 avolpow = domainMgr_->heatSourceParameterValues[heatSourceTableIterator][1];

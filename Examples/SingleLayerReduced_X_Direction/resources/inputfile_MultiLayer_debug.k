@@ -22,9 +22,11 @@ diff
 *CONTROL_TERMINATION
 $ total_time  max_iter  nonlin_tolerance
   0.00320000  100       5.0e-4
-*CONTROL_TIMESTEP
+$*CONTROL_TIMESTEP
 $ sim_timestep  output_timestep
-  2.0e-5        1.0e-4
+$  2.0e-5        1.0e-4
+*CONTROL_TIMESTEP_VARIABLE
+../Examples/SingleLayerReduced_X_Direction/resources/timeStepInformation.k
 *POWDER_BED_MODE
 $ numlayers  ncvlayer  layerheight  density  cpa     cpb     thcona     thconb
   1          8         0.04e-3      4330     0.2508  357.7   0          0.995
