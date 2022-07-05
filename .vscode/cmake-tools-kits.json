@@ -1,0 +1,10 @@
+{
+    "name": "GCC 11.2.0",
+    "compilers": {
+      "C": "usr/local/bin/gcc",
+      "CXX": "usr/local/bin/gcc"
+    },
+    "preferredGenerator": {
+      "name": "Unix Makefiles"
+    }
+}
