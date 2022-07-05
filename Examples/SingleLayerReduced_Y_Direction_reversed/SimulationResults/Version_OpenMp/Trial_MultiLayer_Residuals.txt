@@ -1,0 +1,363 @@
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  1.00e-04    51      297       2.17e-06   4.99e-04   2.46e-06   7.62e-06   1.29e-06   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   8244.42   3.42e+00   3.27e+00   1.09e+00    1.37e-04    3.08e-05    9.16e-05
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     96.4      1.1      0.0     -0.0     -0.0     -1.1    96.5    97.5     1.0
+
+  Cooling rate from solidus to 290K below solidus:               -nan
+  Cooling rate from liquidus to solidus:                   4.0250e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  2.00e-04   100      700       7.79e-04   6.74e-04   2.60e-05   2.11e-05   3.55e-05   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7862.45   3.52e+00   3.52e+00   1.14e+00    1.64e-04    4.00e-05    1.94e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     96.5      1.0      0.0     -0.0     -0.0     -1.0    94.8    97.5     1.0
+
+  Cooling rate from solidus to 290K below solidus:               -nan
+  Cooling rate from liquidus to solidus:                   3.8889e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  3.00e-04    83     1183       4.27e-04   4.95e-04   3.25e-05   5.67e-05   1.29e-04   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7619.97   3.43e+00   3.63e+00   1.15e+00    1.72e-04    5.01e-05    2.16e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     96.6      0.9      0.0     -0.0     -0.0     -0.9    95.7    97.5     1.0
+
+  Cooling rate from solidus to 290K below solidus:         9.7658e+06
+  Cooling rate from liquidus to solidus:                   3.6220e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  4.00e-04   100     1554       1.78e-04   3.76e-03   2.34e-04   5.04e-04   6.86e-04   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7436.50   3.38e+00   3.67e+00   1.15e+00   -3.50e-04    5.66e-05    2.17e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     96.7      0.8      0.0     -0.0     -0.0     -0.9    97.1    97.5     1.0
+
+  Cooling rate from solidus to 290K below solidus:         1.0504e+07
+  Cooling rate from liquidus to solidus:                   3.3233e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  5.00e-04   100     2050       2.45e-04   9.86e-04   4.36e-06   1.16e-04   4.39e-06   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7298.53   3.40e+00   3.69e+00   1.16e+00   -2.50e-04    6.23e-05    3.27e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     96.7      0.8      0.0     -0.0     -0.0     -0.8    94.5    97.5     1.0
+
+  Cooling rate from solidus to 290K below solidus:         1.0995e+07
+  Cooling rate from liquidus to solidus:                   3.1168e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  6.00e-04   100     2550       2.99e-04   8.00e-04   6.86e-06   9.62e-06   2.52e-06   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7244.55   3.40e+00   3.70e+00   1.16e+00   -2.09e-04    6.57e-05    3.68e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     96.8      0.8      0.0     -0.0     -0.0     -0.8    94.1    97.5     1.0
+
+  Cooling rate from solidus to 290K below solidus:         1.1021e+07
+  Cooling rate from liquidus to solidus:                   3.0605e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  7.00e-04   100     2950       2.21e-05   8.67e-04   3.18e-06   1.11e-05   1.33e-06   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7237.83   3.40e+00   3.70e+00   1.16e+00   -1.92e-04    7.04e-05    3.41e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     96.7      0.8      0.0     -0.0     -0.0     -0.8    96.8    97.5     1.0
+
+  Cooling rate from solidus to 290K below solidus:         1.0998e+07
+  Cooling rate from liquidus to solidus:                   3.0602e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  8.00e-04   100     3450       1.49e-04   1.30e-03   6.98e-06   7.67e-05   3.26e-06   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7242.80   3.39e+00   3.70e+00   1.16e+00   -1.83e-04    7.38e-05    3.93e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     96.9      0.8      0.0     -0.0     -0.0     -0.8    95.2    97.5     1.0
+
+  Cooling rate from solidus to 290K below solidus:         1.0991e+07
+  Cooling rate from liquidus to solidus:                   3.0650e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  9.00e-04   100     3950       2.72e-04   1.26e-03   8.86e-06   9.12e-05   3.41e-05   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7254.03   3.38e+00   3.69e+00   1.16e+00   -1.78e-04    7.52e-05    4.31e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     96.7      0.8      0.0     -0.0     -0.0     -0.8    93.5    97.5     1.0
+
+  Cooling rate from solidus to 290K below solidus:         1.0991e+07
+  Cooling rate from liquidus to solidus:                   3.0698e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  1.00e-03   100     4450       3.97e-04   1.46e-03   6.42e-06   3.26e-05   5.80e-06   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7257.77   3.38e+00   3.69e+00   1.16e+00   -1.75e-04    7.58e-05    4.61e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     96.7      0.8      0.0     -0.0     -0.0     -0.8    89.5    97.5     1.1
+
+  Cooling rate from solidus to 290K below solidus:         1.0992e+07
+  Cooling rate from liquidus to solidus:                   3.0712e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  1.10e-03   100     4950       4.25e-04   1.05e-03   1.05e-05   3.15e-05   3.31e-06   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7256.07   3.38e+00   3.69e+00   1.16e+00   -1.72e-04    7.63e-05    4.87e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     96.7      0.8      0.0     -0.0     -0.0     -0.8    87.9    97.5     1.1
+
+  Cooling rate from solidus to 290K below solidus:         1.0993e+07
+  Cooling rate from liquidus to solidus:                   3.0724e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  1.20e-03   100     5450       4.25e-04   1.06e-03   4.83e-06   4.88e-05   3.08e-06   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7255.64   3.38e+00   3.70e+00   1.16e+00   -1.71e-04    7.66e-05    5.09e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     96.7      0.8      0.0     -0.0     -0.0     -0.8    87.2    97.5     1.1
+
+  Cooling rate from solidus to 290K below solidus:         1.0991e+07
+  Cooling rate from liquidus to solidus:                   3.0719e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  1.30e-03   100     5950       6.97e-04   1.37e-03   4.07e-05   1.98e-05   2.04e-05   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7257.56   3.38e+00   3.69e+00   1.16e+00   -1.70e-04    7.69e-05    4.96e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     96.4      0.8      0.0     -0.0     -0.0     -0.8    84.3    97.5     1.1
+
+  Cooling rate from solidus to 290K below solidus:         1.0989e+07
+  Cooling rate from liquidus to solidus:                   3.0720e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  1.40e-03   100     6450       7.02e-04   2.23e-03   2.46e-05   1.09e-04   1.58e-05   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7258.25   3.38e+00   3.69e+00   1.16e+00   -1.69e-04    7.71e-05    5.29e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     96.1      0.8      0.0     -0.0     -0.0     -0.8    85.1    97.5     1.1
+
+  Cooling rate from solidus to 290K below solidus:         1.0988e+07
+  Cooling rate from liquidus to solidus:                   3.0728e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  1.50e-03   100     6950       5.86e-04   2.07e-03   2.53e-05   3.42e-05   1.24e-05   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7258.99   3.38e+00   3.69e+00   1.16e+00   -1.68e-04    7.71e-05    5.55e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     95.7      0.8     -0.0     -0.0     -0.0     -0.8    86.2    97.5     1.1
+
+  Cooling rate from solidus to 290K below solidus:         1.0986e+07
+  Cooling rate from liquidus to solidus:                   3.0734e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  1.60e-03   100     7450       5.86e-04   3.32e-03   1.58e-05   2.95e-05   1.04e-05   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7259.14   3.38e+00   3.69e+00   1.16e+00   -1.68e-04    7.71e-05    5.78e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     95.4      0.8     -0.0     -0.0     -0.0     -0.8    86.1    97.5     1.1
+
+  Cooling rate from solidus to 290K below solidus:         1.0985e+07
+  Cooling rate from liquidus to solidus:                   3.0727e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  1.70e-03   100     7950       5.97e-04   4.79e-03   2.02e-05   5.20e-05   1.55e-05   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7258.49   3.37e+00   3.69e+00   1.16e+00   -1.68e-04    7.71e-05    5.98e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     95.8      0.8      0.0     -0.0      0.0     -0.8    83.9    97.5     1.2
+
+  Cooling rate from solidus to 290K below solidus:         1.0984e+07
+  Cooling rate from liquidus to solidus:                   3.0728e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  1.80e-03   100     8450       5.33e-04   3.02e-03   1.12e-05   2.61e-05   7.97e-06   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7256.74   3.37e+00   3.69e+00   1.16e+00   -1.67e-04    7.71e-05    6.16e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     95.6      0.8      0.0     -0.0     -0.0     -0.8    86.6    97.5     1.1
+
+  Cooling rate from solidus to 290K below solidus:         1.0982e+07
+  Cooling rate from liquidus to solidus:                   3.0713e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  1.90e-03   100     8950       5.14e-04   6.77e-03   1.03e-05   3.76e-05   2.21e-05   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7255.80   3.37e+00   3.69e+00   1.16e+00   -1.67e-04    7.71e-05    6.34e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     95.9      0.8      0.0     -0.0     -0.0     -0.8    87.5    97.5     1.1
+
+  Cooling rate from solidus to 290K below solidus:         1.0981e+07
+  Cooling rate from liquidus to solidus:                   3.0711e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  2.00e-03   100     9450       4.98e-04   2.98e-03   7.64e-06   1.40e-05   8.08e-06   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7253.58   3.37e+00   3.69e+00   1.16e+00   -1.67e-04    7.71e-05    6.51e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     96.0      0.8     -0.0     -0.0     -0.0     -0.8    86.7    97.5     1.1
+
+  Cooling rate from solidus to 290K below solidus:         1.0979e+07
+  Cooling rate from liquidus to solidus:                   3.0707e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  2.10e-03   100     9950       4.84e-04   2.07e-03   7.98e-06   2.26e-05   4.17e-06   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7255.83   3.37e+00   3.69e+00   1.16e+00   -1.67e-04    7.71e-05    6.68e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     96.0      0.8     -0.0     -0.0     -0.0     -0.9    86.3    97.5     1.1
+
+  Cooling rate from solidus to 290K below solidus:         1.0978e+07
+  Cooling rate from liquidus to solidus:                   3.0709e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  2.20e-03   100    10450       4.91e-04   3.10e-03   7.20e-06   1.11e-05   6.84e-06   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7251.97   3.37e+00   3.69e+00   1.16e+00   -1.67e-04    7.71e-05    6.83e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     96.0      0.8     -0.0     -0.0     -0.0     -0.9    85.9    97.5     1.1
+
+  Cooling rate from solidus to 290K below solidus:         1.0976e+07
+  Cooling rate from liquidus to solidus:                   3.0696e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  2.30e-03   100    10950       5.16e-04   4.10e-03   1.19e-05   2.28e-05   1.19e-05   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7251.66   3.37e+00   3.69e+00   1.16e+00   -1.67e-04    7.71e-05    6.98e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     96.2      0.8     -0.0     -0.0     -0.0     -0.9    85.9    97.5     1.1
+
+  Cooling rate from solidus to 290K below solidus:         1.0974e+07
+  Cooling rate from liquidus to solidus:                   3.0688e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  2.40e-03   100    11450       4.95e-04   2.66e-03   5.58e-06   1.31e-05   5.61e-06   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7251.64   3.37e+00   3.69e+00   1.16e+00   -1.67e-04    7.71e-05    7.13e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     96.0      0.8     -0.0     -0.0     -0.0     -0.9    85.9    97.5     1.1
+
+  Cooling rate from solidus to 290K below solidus:         1.0973e+07
+  Cooling rate from liquidus to solidus:                   3.0689e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  2.50e-03   100    11950       4.81e-04   3.42e-03   6.10e-06   1.02e-05   8.80e-06   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7252.02   3.37e+00   3.69e+00   1.16e+00   -1.67e-04    7.71e-05    7.27e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     95.8      0.8     -0.0     -0.0     -0.0     -0.9    85.9    97.5     1.1
+
+  Cooling rate from solidus to 290K below solidus:         1.0972e+07
+  Cooling rate from liquidus to solidus:                   3.0688e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  2.60e-03   100    12450       4.76e-04   3.15e-02   1.48e-05   3.08e-05   7.75e-05   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7252.61   3.37e+00   3.69e+00   1.16e+00   -1.67e-04    7.71e-05    7.41e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     95.6      0.8     -0.0     -0.0     -0.0     -0.9    85.8    97.5     1.1
+
+  Cooling rate from solidus to 290K below solidus:         1.0971e+07
+  Cooling rate from liquidus to solidus:                   3.0684e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  2.70e-03   100    12950       4.73e-04   3.28e-03   5.64e-06   1.01e-05   7.98e-06   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7254.57   3.37e+00   3.69e+00   1.16e+00   -1.67e-04    7.71e-05    7.54e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     95.8      0.8     -0.0     -0.0     -0.0     -0.9    86.1    97.5     1.1
+
+  Cooling rate from solidus to 290K below solidus:         1.0971e+07
+  Cooling rate from liquidus to solidus:                   3.0693e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  2.80e-03   100    13450       4.58e-04   2.76e-03   5.37e-06   1.66e-05   6.08e-06   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7256.54   3.37e+00   3.69e+00   1.16e+00   -1.67e-04    7.71e-05    7.67e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     95.8      0.8     -0.0     -0.0     -0.0     -0.9    86.3    97.5     1.1
+
+  Cooling rate from solidus to 290K below solidus:         1.0973e+07
+  Cooling rate from liquidus to solidus:                   3.0706e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  2.90e-03   100    13950       4.52e-04   3.06e-03   5.26e-06   1.60e-05   7.10e-06   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7258.73   3.37e+00   3.69e+00   1.16e+00   -1.67e-04    7.71e-05    7.80e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     95.8      0.8     -0.1     -0.0     -0.0     -0.9    86.3    97.5     1.1
+
+  Cooling rate from solidus to 290K below solidus:         1.0974e+07
+  Cooling rate from liquidus to solidus:                   3.0711e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  3.00e-03   100    14450       4.24e-04   6.39e-03   1.08e-05   2.87e-05   1.41e-05   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7259.76   3.37e+00   3.69e+00   1.16e+00   -1.67e-04    7.71e-05    7.93e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     95.8      0.8     -0.0     -0.0     -0.0     -0.9    87.0    97.5     1.1
+
+  Cooling rate from solidus to 290K below solidus:         1.0975e+07
+  Cooling rate from liquidus to solidus:                   3.0715e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  3.10e-03   100    14950       4.36e-04   3.47e-03   5.86e-06   7.01e-06   8.25e-06   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   7260.01   3.37e+00   3.69e+00   1.16e+00   -1.67e-04    7.71e-05    8.05e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     95.8      0.9     -0.0     -0.0     -0.0     -0.9    87.0    97.5     1.1
+
+  Cooling rate from solidus to 290K below solidus:         1.0976e+07
+  Cooling rate from liquidus to solidus:                   3.0715e+07
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  3.20e-03   100    15450       5.47e-04   6.08e-03   6.02e-05   8.72e-05   2.61e-05   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   3028.59   1.28e+00   2.42e+00   2.55e-01    1.85e-04    0.00e+00    8.10e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     -0.9      0.2     -0.1     -0.0     -0.0     -0.2    -9.9     0.0    -0.0
+
+  Cooling rate from solidus to 290K below solidus:               -nan
+  Cooling rate from liquidus to solidus:                   6.0715e+06
+====================================================================================================
+====================================================================================================
+  time        iter  tot_iter    res_enth   res_mass   res_u      res_v      res_w      res_concen
+  3.20e-03   100    15450       5.47e-04   6.08e-03   6.02e-05   8.72e-05   2.61e-05   0.00e+00 
+  Tmax       umax       vmax       wmax        length      depth       width
+   3028.59   1.28e+00   2.42e+00   2.55e-01    1.85e-04    0.00e+00    8.10e-04
+  north    south     top   toploss   bottom    west      east    hout    accu    hin      ratio
+  -0.0     -0.0     -0.9      0.2     -0.1     -0.0     -0.0     -0.2    -9.9     0.0    -0.0
+
+  Cooling rate from solidus to 290K below solidus:               -nan
+  Cooling rate from liquidus to solidus:                   6.0715e+06
+====================================================================================================

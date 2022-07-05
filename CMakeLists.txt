@@ -235,6 +235,8 @@ include(InstallRequiredSystemLibraries)
 install(
     TARGETS ${Project}
     )
+install(DIRECTORY ${PROJECT_BINARY_DIR}/Examples DESTINATION help)
+install(DIRECTORY ${PROJECT_BINARY_DIR}/UserManual_Old.pdf DESTINATION help)
 install(DIRECTORY ${PROJECT_BINARY_DIR}/doc/api/html DESTINATION help/api)
 install(DIRECTORY ${PROJECT_BINARY_DIR}/doc/usermanual/documentation/html DESTINATION help/manual)
 install(FILES ${PROJECT_BINARY_DIR}/doc/api/latex/refman.pdf DESTINATION help/api RENAME "Api Documentation.pdf")
