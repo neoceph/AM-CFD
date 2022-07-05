@@ -1,6 +1,0 @@
-
- This is the final melt pool geometry for the given process parameters
-===================================================================
-  Laser Power    Laser Speed      length      depth      width
-  195.00         0.10             1.85e-04    0.00e+00   8.10e-04
-===================================================================
