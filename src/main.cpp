@@ -91,6 +91,7 @@ int main(int arg, char *argv[])
         bcMgr->updateLaser();
     
     // set up the time trackers
+    int variableTimeStepState = 0;
     double dumptime = 0.0;
     double comptime = 0.0;
     double outtrack = 0.0;
@@ -106,7 +107,17 @@ int main(int arg, char *argv[])
     auto simstart = std::chrono::high_resolution_clock::now();
     while (domainMgr->timet_ < simtime)
     {
-        // update timesteps
+        if (meshObj.variableTimeStepFileName_.compare("FALSE"))
+            {
+                if ((domainMgr->timet_ > meshObj.variableTimeStepValues[variableTimeStepState][0]) && (variableTimeStepState < meshObj.variableTimeStepValues.size()-1))
+                {
+                    variableTimeStepState += 1;
+                }
+
+                meshObj.delt_ = meshObj.variableTimeStepValues[variableTimeStepState][1];
+                meshObj.outtime_ = meshObj.variableTimeStepValues[variableTimeStepState][2];
+            }
+
         domainMgr->timet_ += meshObj.delt_;
         outtrack += meshObj.delt_;
         

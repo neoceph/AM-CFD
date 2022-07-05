@@ -36,10 +36,14 @@ class Mesh
         vector<double> volheatsource_params_;
         vector<double> outputsection_params_;
         vector<string>  outputScalarNamesNODE_, outputScalarNamesCELL_, outputVectorNamesNODE_;
+        // vector for reading variable time step as an input
+        vector< vector<double>> variableTimeStepValues;
         double finaltime_, maxit_, nonlintol_, delt_, outtime_;
         std::string toolFileName_;
         std::string outFileName_;
         std::string meshFileName_;
+        std::string heatSourceFileName_;
+        std::string variableTimeStepFileName_;
         std::string directoryName_ = "Results";
         std::string tectype_;
         std::string geomOutName_;
@@ -58,6 +62,7 @@ class Mesh
         bool foundMesh_ = false;
         bool powderbed_ = false;
         bool volheatsource_ = false;
+        bool volheatsourcetable_ = false;
         bool gaussheatsource_ = false;
         bool outputgeom_ = false;
         bool outputsection_ = false;
@@ -75,6 +80,8 @@ class Mesh
         void readMeshFile();
 
         void outputInputs(char* &inputName);
+
+        void getVariableTimeSteps();
 
     private:
         // Private variables

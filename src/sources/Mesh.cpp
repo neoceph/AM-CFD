@@ -206,6 +206,18 @@ void Mesh::getDomainInfo()
                 outputsection_ = true;
                 continue;
             }
+            else if(line == "*VOLUMETRIC_HEAT_SOURCE_TABLE")
+            {
+                option = 30;
+                volheatsource_ = true;
+                volheatsourcetable_ = true;
+                continue;
+            }
+            else if(line == "*CONTROL_TIMESTEP_VARIABLE")
+            {
+                option = 31;
+                continue;
+            }
             else if(line.front() == '*') 
             {
                 option = -1;
@@ -275,6 +287,7 @@ void Mesh::getDomainInfo()
                 vector<double> coords((istream_iterator<double>(lines)), istream_iterator<double>());
                 delt_ = coords[0];
                 outtime_ = coords[1];
+                variableTimeStepFileName_ = "FALSE";
             }// option 11
             else if(option == 12)	// *CONTROL_TERMINATION
             {
@@ -404,6 +417,19 @@ void Mesh::getDomainInfo()
                 for (int ii = 0; ii < coords.size(); ++ii)
                     outputsection_params_.push_back(coords[ii]);
             }// option 29
+            else if(option == 30)	// *VOLUMETRIC_HEAT_SOURCE_TABLE
+            {
+                istringstream lines(line);
+                vector<string> coords((istream_iterator<string>(lines)), istream_iterator<string>());
+                heatSourceFileName_ = coords[0]; 
+            }// option 29
+            else if(option == 31)	// *CONTROL_TIMESTEP_VARIABLE
+            {
+                istringstream lines(line);
+                vector<string> coords((istream_iterator<string>(lines)), istream_iterator<string>());
+                variableTimeStepFileName_ = coords[0]; 
+                getVariableTimeSteps();
+            }// option 11
         }//end option conditional loops
     }//end if 
 }//end getDomainInfo
@@ -602,3 +628,26 @@ Mesh::outputInputs(char* &inputName)
     cout << "===================================================================\n\n";
     cout << endl;
 }//end outputInputs
+//////////////////////////////////////////////////////
+//		getHeatSourceParameters()			    //
+//////////////////////////////////////////////////////
+void
+Mesh::getVariableTimeSteps()
+{
+    ifstream file;
+    file.open(variableTimeStepFileName_.c_str());
+    string line;
+    if (file.is_open())
+    {
+        while(getline(file, line))
+        {
+            istringstream lines(line);
+            vector<double> coords((istream_iterator<double>(lines)), istream_iterator<double>());
+            vector<double> parameterValues(coords.begin(), coords.end());
+
+            variableTimeStepValues.push_back(parameterValues);
+        }//end while
+        delt_ = variableTimeStepValues[0][1];
+        outtime_ = variableTimeStepValues[0][2];
+    }//end if
+}//end getToolpath

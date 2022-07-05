@@ -22,18 +22,22 @@ diff
 *CONTROL_TERMINATION
 $ total_time  max_iter  nonlin_tolerance
   0.00320000  100       5.0e-4
-*CONTROL_TIMESTEP
+$*CONTROL_TIMESTEP
 $ sim_timestep  output_timestep
-  2.0e-5        1.0e-4
+$  2.0e-5        1.0e-4
+*CONTROL_TIMESTEP_VARIABLE
+../Examples/SingleLayerReduced_X_Direction/resources/timeStepInformation.k
 *POWDER_BED_MODE
 $ numlayers  ncvlayer  layerheight  density  cpa     cpb     thcona     thconb
   1          8         0.04e-3      4330     0.2508  357.7   0          0.995
+*VOLUMETRIC_HEAT_SOURCE_TABLE
+../Examples/SingleLayerReduced_X_Direction/resources/heatSourceParametersTable.k
 $*VOLUMETRIC_HEAT_SOURCE
 $ power   apowseta   heatthick  heatrb   factor
 $  100.0   0.35       75e-6      40e-6    2
-*GAUSS_LASER_PARAMETERS
+$*GAUSS_LASER_PARAMETERS
 $ power      absorb  radius      factor
-  195.000    0.50    50.0E-06    2
+$  195.000    0.50    50.0E-06    2
 *MATERIAL_PROPERTIES
 $ dens  denl   viscos  tsolid  tliquid  hsmelt  hlfriz
   8440  7640   0.007   1563    1623     861e3   1151e3

@@ -78,7 +78,7 @@ class CFDSolverManager
           // residual error of velocities, mass and enthalpy
 	      double resoru_, resorv_, resorw_, resorm_, resorh_;
           // number of iterations
-        int itertot_, niter_;
+        int itertot_, niter_, heatSourceTableIterator = 0, heatSourceTableSize = 0;
           // indicator for initialization
         bool init_ = true;
           // concentration (for species solve) and residual error

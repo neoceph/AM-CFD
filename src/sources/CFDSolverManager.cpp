@@ -1678,16 +1678,40 @@ CFDSolverManager::calculateSource(int &ivar)
             int njm2 = domainMgr_->njm2_;
             double urfh = domainMgr_->urfh_;
             double hlatnt = domainMgr_->hlatnt_;
-            double avolfact = domainMgr_->avolfact_;
-            double avolpow = domainMgr_->avolpow_;
-            double apowseta = domainMgr_->apowseta_;
-            double heatthick = domainMgr_->heatthick_;
-            double heatrb = domainMgr_->heatrb_;
-             
+            double avolfact = 0;
+            double avolpow = 0;
+            double apowseta = 0;
+            double heatthick = 0;
+            double heatrb = 0;
+
             // grab some stuff from the bc
             double beamposx = bcMgr_->beamposx_;
             double beamposy = bcMgr_->beamposy_;
 
+            heatSourceTableSize = domainMgr_->heatSourceParameterValues.size();
+            
+            if (meshObj_->volheatsource_ == true && meshObj_->volheatsourcetable_ == false)
+            {
+                avolfact = domainMgr_->avolfact_;
+                avolpow = domainMgr_->avolpow_;
+                apowseta = domainMgr_->apowseta_;
+                heatthick = domainMgr_->heatthick_;
+                heatrb = domainMgr_->heatrb_;
+            }
+
+            else
+            {
+                if (domainMgr_->timet_ > domainMgr_->heatSourceParameterValues[heatSourceTableIterator][0] && heatSourceTableIterator < heatSourceTableSize-1)
+                    heatSourceTableIterator += 1;
+                                
+                avolpow = domainMgr_->heatSourceParameterValues[heatSourceTableIterator][1];
+                apowseta = domainMgr_->heatSourceParameterValues[heatSourceTableIterator][2];
+                heatthick = domainMgr_->heatSourceParameterValues[heatSourceTableIterator][3];
+                heatrb = domainMgr_->heatSourceParameterValues[heatSourceTableIterator][4];
+                avolfact = domainMgr_->heatSourceParameterValues[heatSourceTableIterator][5];
+                
+            }
+            
             //----source term
             #pragma omp parallel
             {

@@ -3,5 +3,6 @@
         "ostream": "cpp",
         "chrono": "cpp",
         "iosfwd": "cpp"
-    }
+    },
+    "cmake.configureOnOpen": true
 }
