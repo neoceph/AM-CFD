@@ -1,23 +1,20 @@
-set(BINARY ${CMAKE_PROJECT_NAME})
+set(SubProject ${CMAKE_PROJECT_NAME}_lib) # setting the library name
 
-# set C++ compiler flags 
-set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -std=c++11")
-set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g")
+# specifying the project name
+project(${SubProject})
 
-# check if openMP compilers are available and link them
-find_package(OpenMP 4.0 REQUIRED)
-if (OPENMP_FOUND)
-    set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
-    set (CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${OpenMP_EXE_LINKER_FLAGS}")
-endif()
+# specifying the directory where header files are located
+# include_directories("/headers")
 
-# file(GLOB_RECURSE SOURCES LIST_DIRECTORIES true *.h *.cpp)
+# selecting all the files with .cpp extension and assigning them to a variable 'SOURCES'
+file(GLOB SOURCES "sources/*.*")
+file(GLOB HEADERS "headers/*.*")
 
-file(GLOB SOURCES "${CMAKE_SOURCE_DIR}/src/sources/*.cpp")
-file(GLOB HEADERS "${CMAKE_SOURCE_DIR}/src/headers/*.h")
+# adding to the library all the files that are selected and assigned to the variable name 'SOURCES'
+add_library(
+    ${SubProject} # Name of the project that is extracted from the root directory CMakeLists.txt
+    ${SOURCES} # 
+    ${HEADERS}
+    )
 
-add_executable(${BINARY} main.cpp)
-
-add_library(${BINARY}_lib ${SOURCES} ${HEADERS})
-message(STATUS "SOURCES = ${HEADERS}")
-target_link_libraries(${BINARY} ${BINARY}_lib)
+install(TARGETS ${SubProject} DESTINATION lib)

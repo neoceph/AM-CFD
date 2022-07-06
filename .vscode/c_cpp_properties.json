@@ -5,7 +5,7 @@
             "includePath": [
                 "${default}",
                 "./src/headers",
-                "./libs/googletest/googletest/include"
+                "./extLibs/googletest/googletest/include"
             ],
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "gnu11",

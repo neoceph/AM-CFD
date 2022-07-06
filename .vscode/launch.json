@@ -8,7 +8,8 @@
             "request": "launch",
             // Resolved by CMake Tools:
             "program": "${command:cmake.launchTargetPath}",
-            "args": ["../Examples/SingleLayerReduced_X_Direction/resources/inputfile_MultiLayer_debug.k"],
+            //"args": ["../Examples/SingleLayerReduced_X_Direction/resources/inputfile_MultiLayer_debug.k"],
+            "args": ["--version"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}/build",
             "environment": [
@@ -23,7 +24,7 @@
                     "value": "Something something"
                 }
             ],
-            "externalConsole": true,
+            "externalConsole": false,
             // set '"externalConsole": true,' for external terminal window where output could be seen. Set the value 'false' if you don't want the output window separate.
             "MIMode": "gdb",
             "setupCommands": [
