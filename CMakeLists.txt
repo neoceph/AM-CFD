@@ -235,10 +235,10 @@ include(InstallRequiredSystemLibraries)
 install(
     TARGETS ${Project}
     )
-install(DIRECTORY ${PROJECT_BINARY_DIR}/Examples DESTINATION help)
-install(DIRECTORY ${PROJECT_BINARY_DIR}/UserManual_Old.pdf DESTINATION help)
+install(DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/ DESTINATION help/Examples)
 install(DIRECTORY ${PROJECT_BINARY_DIR}/doc/api/html DESTINATION help/api)
 install(DIRECTORY ${PROJECT_BINARY_DIR}/doc/usermanual/documentation/html DESTINATION help/manual)
+install(FILES ${PROJECT_SOURCE_DIR}/UserManual_Old.pdf DESTINATION help)
 install(FILES ${PROJECT_BINARY_DIR}/doc/api/latex/refman.pdf DESTINATION help/api RENAME "Api Documentation.pdf")
 install(FILES ${PROJECT_BINARY_DIR}/doc/usermanual/documentation/latex/${User_Guide}.pdf DESTINATION help/manual RENAME "User Guide.pdf")
 
