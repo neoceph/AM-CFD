@@ -482,6 +482,7 @@ CFDSolverManager::initializeSolver()
         if(meshObj_->powderbed_)
         {
             solfrac_[loc] = 0.0;
+            mpPhase[loc] = 0.0;
             int k = loc/(ni*nj);
             if(z_[k] < z_[nk-1] - ((double)domainMgr_->numlayers_*domainMgr_->layerheight_))
                 csfrac_[loc] = 1.0;
@@ -554,6 +555,7 @@ CFDSolverManager::initializeSolver()
         updateThermalProps = &CFDSolverManager::powderMaterialProps;
         solVarMgr_->mapSolutionVars_["csfrac"] = &csfrac_[0];   
         solVarMgr_->mapSolutionVars_["solfrac"] = &solfrac_[0];   
+        solVarMgr_->mapSolutionVars_["mpPhase"] = &mpPhase[0];   
     }
     else
     {
@@ -2652,6 +2654,11 @@ CFDSolverManager::updateSolutions()
         {
             csfrac_[loc] = max(csfrac_[loc],fracl_[loc]);
             solfrac_[loc] = max(solfrac_[loc],fracl_[loc]*trackindx);
+            // tsolid_ = meshObj_->mat_props_
+            if(temp_[loc]>domainMgr_->tsolid_)
+            {
+                mpPhase[loc] = max(mpPhase[loc],fracl_[loc]*trackindx);
+            }
         }//end if
         if(meshObj_->species_)
         {

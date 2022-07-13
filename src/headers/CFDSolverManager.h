@@ -75,6 +75,7 @@ class CFDSolverManager
         double csfrac_[_nz_*_ny_*_nx_];
         double rho_[_nz_*_ny_*_nx_];
         double solfrac_[_nz_*_ny_*_nx_];
+        double mpPhase[_nz_*_ny_*_nx_];
           // residual error of velocities, mass and enthalpy
 	      double resoru_, resorv_, resorw_, resorm_, resorh_;
           // number of iterations

@@ -1,10 +1,16 @@
-{
-    "name": "GCC 11.2.0",
+[
+  {
+    "name": "GCC 9.4.0 x86_64-linux-gnu",
     "compilers": {
-      "C": "usr/local/bin/gcc",
-      "CXX": "usr/local/bin/gcc"
-    },
-    "preferredGenerator": {
-      "name": "Unix Makefiles"
+      "C": "/usr/bin/gcc",
+      "CXX": "/usr/bin/g++"
     }
-}
+  },
+  {
+    "name": "nvidia-SDK",
+    "compilers": {
+      "C": "/opt/nvidia/hpc_sdk/Linux_x86_64/22.5/compilers/bin/nvcc",
+      "CXX": "/opt/nvidia/hpc_sdk/Linux_x86_64/22.5/compilers/bin/nvc++"
+    }
+  }
+]

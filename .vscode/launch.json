@@ -8,8 +8,8 @@
             "request": "launch",
             // Resolved by CMake Tools:
             "program": "${command:cmake.launchTargetPath}",
-            //"args": ["../Examples/SingleLayerReduced_X_Direction/resources/inputfile_MultiLayer_debug.k"],
-            "args": ["--version"],
+            "args": ["../Examples/MultiTrack/inputfile.k"],
+            // "args": ["--version"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}/build",
             "environment": [
