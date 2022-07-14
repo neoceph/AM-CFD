@@ -280,7 +280,9 @@ DomainManager::getToolpath()
             vector<double> txyz(coords.begin(), coords.begin() + 4);
      
             int state = (int)coords[4];
+            int trackNumber = (int)coords[5];
             laserOn_.push_back(state);
+            trackID.push_back(trackNumber);
             tooltxyz_.push_back(txyz);
         }//end while
     }//end if

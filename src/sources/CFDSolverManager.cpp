@@ -2629,10 +2629,20 @@ CFDSolverManager::updateSolutions()
     int ni = domainMgr_->ni_;
     int nj = domainMgr_->nj_;
     int nk = domainMgr_->nk_;
+    int trackID;
     double tsolid = domainMgr_->tsolid_;
+    
 
     // grab some stuff from the BC
     double trackindx = (double)bcMgr_-> trackindx_;
+
+    for (int i=domainMgr_->tooltxyz_.size(); i>0; i--)
+    {
+        if (domainMgr_->timet_<=domainMgr_->tooltxyz_[i-1][0])
+        {
+            trackID = domainMgr_->trackID[i-1];
+        }
+    }
 
     // push back the velocities
     #pragma omp parallel for
@@ -2659,11 +2669,11 @@ CFDSolverManager::updateSolutions()
             solfrac_[loc] = max(solfrac_[loc],fracl_[loc]*trackindx);
             if(temp_[loc]>domainMgr_->tsolid_)
             {
-                mpPhase[loc] = 1.0;
+                mpPhase[loc] = trackID;
             }
             if(temp_[loc]>domainMgr_->tliquid_)
             {
-                mpLiqPhase[loc] = 1.0;
+                mpLiqPhase[loc] = trackID;
             }
             
         }//end if

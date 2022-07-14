@@ -63,7 +63,7 @@ class DomainManager
         int numlayers_, ncvzlayer_;
           // toolpath vectors for GAMMA formated file
         vector< vector<double>> tooltxyz_;
-        vector<int> laserOn_;
+        vector<int> laserOn_, trackID;
         // vector for reading heat source parameter as an input
         vector< vector<double>> heatSourceParameterValues;
           // outputting a section of the domain: box dimensions and output time

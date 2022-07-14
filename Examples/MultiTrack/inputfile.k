@@ -19,6 +19,8 @@ solfrac
 csfrac
 rho
 diff
+mpPhase
+mpLiqPhase
 *CONTROL_TERMINATION
 $ total_time  max_iter  nonlin_tolerance
  0.11e-3    100       1.0e-6
