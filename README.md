@@ -1,5 +1,5 @@
 ##Northwestern AM-CFD Code (C++) --BetaVersion
-developed by Abdullah Al Amin. email: abdullah.amin@northwestern.edu
+developed by Abdullah Al Amin. email: abdullah.amin@northwestern.edu and initially started by Kevontrez Jones and Zhengtao Gan
 ---
 **Installation 
 ---
