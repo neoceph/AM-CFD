@@ -18,7 +18,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules ${CMAKE_MODULE_P
 
 
 # use, i.e. don't skip the full RPATH for the build tree
-SET(CMAKE_SKIP_BUILD_RPATH  FALSE)
+# SET(CMAKE_SKIP_BUILD_RPATH  FALSE)
 
 # Make a version file containing the current version from git.
 if(EXISTS "${PROJECT_SOURCE_DIR}/versionForSourcePackage.cmake")
@@ -209,24 +209,24 @@ set(source_files "${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp")
 #Add the version_file to the project build.
 # generating executable program by specifying the location of the file
 add_executable(${Project} src/main.cpp ${version_file})
-set_target_properties(${Project} PROPERTIES LINK_FLAGS "-Wl,-rpath,./")
+# set_target_properties(${Project} PROPERTIES LINK_FLAGS "-Wl,-rpath,./")
 
 target_link_libraries(${Project} ${ProjectLib} -static-libgcc -static-libstdc++)
 
 
 # when building, don't use the install RPATH already
 # (but later on when installing)
-SET(CMAKE_BUILD_WITH_INSTALL_RPATH FALSE) 
+# SET(CMAKE_BUILD_WITH_INSTALL_RPATH FALSE) 
 
 # specifying install rules for dependency libraries
 # target_link_libraries(${Project} -static-libgcc -static-libstdc++)
 install(DIRECTORY ${PROJECT_SOURCE_DIR}/dependencies/lib DESTINATION .)
 #set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
-set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
+# set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
 
 # don't add the automatically determined parts of the RPATH
 # which point to directories outside the build tree to the install RPATH
-SET(CMAKE_INSTALL_RPATH_USE_LINK_PATH FALSE)
+# SET(CMAKE_INSTALL_RPATH_USE_LINK_PATH FALSE)
 
 
 # specifying install rules for documentation 
