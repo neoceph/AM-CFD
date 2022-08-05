@@ -46,4 +46,5 @@
 - Under the doc/usermanual directory issuing `make html` will generate html documentation under doc/readthedocs/_build/html directory
 - `make latexpdf` will generate pdf documentation under doc/readthedocs/_build/latex directory
 
-    
+## Readthedocs documentation
+Readthedocs documentation contains details of how to work with AM-CFD. The documnetation is hosted in [here].(https://am-cfd.readthedocs.io/en/latest/)
