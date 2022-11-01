@@ -2,7 +2,9 @@
     {
        "ProjectName": "AM-CFD",
        "Developer": "Abdullah Al Amin",
-       "StartYear": "2021"
+       "StartYear": "2021",
+       "DocumentGeneration": "FALSE",
+       "Comment": "Change DocumentGeneration from 'TRUE' to 'FALSE' for changing document generation to not generating document"
     }
  ]
 

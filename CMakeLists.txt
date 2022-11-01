@@ -6,6 +6,7 @@ file(READ ${CMAKE_CURRENT_SOURCE_DIR}/CMakeSetup.json CMakeSetup_STRING)
 # extracting project name and devleoper names from the json file.
 string(JSON Project_NAME GET ${CMakeSetup_STRING} 0 ProjectName)
 string(JSON Project_DEVELOPER GET ${CMakeSetup_STRING} 0 Developer)
+string(JSON Document_Generation GET ${CMakeSetup_STRING} 0 DocumentGeneration)
 
 # CPack and git versioning stuffs
 
@@ -102,6 +103,7 @@ if(NOT EXISTS "${PROJECT_SOURCE_DIR}/extLibs/googletest/CMakeLists.txt")
     message(FATAL_ERROR "The googletest submodules was not downloaded! GIT_SUBMODULE is either turned off or failed. Please update submodules")
 endif()
 
+if (${Document_Generation})
 # setting up sphinx-build with readthedocs theme
 file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/doc/usermanual)    
 configure_file(
@@ -171,7 +173,7 @@ if (DOXYGEN_FOUND)
 else (DOXYGEN_FOUND)
     message("Doxygen need to be installed to generate the doxygen documentation!")
 endif (DOXYGEN_FOUND)
-
+endif(${Document_Generation})
 
 # adding the googletest library separately as including the subdirectory with the previous command did not work!
 add_subdirectory(
@@ -235,12 +237,15 @@ include(InstallRequiredSystemLibraries)
 install(
     TARGETS ${Project}
     )
+
+    if (${Document_Generation})
+    install(DIRECTORY ${PROJECT_BINARY_DIR}/doc/api/html DESTINATION help/api)
+    install(DIRECTORY ${PROJECT_BINARY_DIR}/doc/usermanual/documentation/html DESTINATION help/manual)
+    install(FILES ${PROJECT_BINARY_DIR}/doc/api/latex/refman.pdf DESTINATION help/api RENAME "Api Documentation.pdf")
+    install(FILES ${PROJECT_BINARY_DIR}/doc/usermanual/documentation/latex/${User_Guide}.pdf DESTINATION help/manual RENAME "User Guide.pdf")
+endif(${Document_Generation})
 install(DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/ DESTINATION help/Examples)
-install(DIRECTORY ${PROJECT_BINARY_DIR}/doc/api/html DESTINATION help/api)
-install(DIRECTORY ${PROJECT_BINARY_DIR}/doc/usermanual/documentation/html DESTINATION help/manual)
 install(FILES ${PROJECT_SOURCE_DIR}/UserManual_Old.pdf DESTINATION help)
-install(FILES ${PROJECT_BINARY_DIR}/doc/api/latex/refman.pdf DESTINATION help/api RENAME "Api Documentation.pdf")
-install(FILES ${PROJECT_BINARY_DIR}/doc/usermanual/documentation/latex/${User_Guide}.pdf DESTINATION help/manual RENAME "User Guide.pdf")
 
 # CPACK ruls
 string(TIMESTAMP YEAR_MONTH "%Y_%m")
