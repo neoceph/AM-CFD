@@ -238,7 +238,7 @@ install(
     TARGETS ${Project}
     )
 
-    if (${Document_Generation})
+if (${Document_Generation})
     install(DIRECTORY ${PROJECT_BINARY_DIR}/doc/api/html DESTINATION help/api)
     install(DIRECTORY ${PROJECT_BINARY_DIR}/doc/usermanual/documentation/html DESTINATION help/manual)
     install(FILES ${PROJECT_BINARY_DIR}/doc/api/latex/refman.pdf DESTINATION help/api RENAME "Api Documentation.pdf")
