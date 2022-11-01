@@ -9,8 +9,8 @@
   {
     "name": "nvidia-SDK",
     "compilers": {
-      "C": "/opt/nvidia/hpc_sdk/Linux_x86_64/22.5/compilers/bin/nvcc",
-      "CXX": "/opt/nvidia/hpc_sdk/Linux_x86_64/22.5/compilers/bin/nvc++"
+      "C": "/opt/nvidia/hpc_sdk/Linux_x86_64/22.7/compilers/bin/nvc",
+      "CXX": "/opt/nvidia/hpc_sdk/Linux_x86_64/22.7/compilers/bin/nvc++"
     }
   }
 ]
