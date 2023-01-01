@@ -82,7 +82,7 @@ class DomainManager
         // global maximum node numbers (for performance)
         const int _nx_ = 700;
         const int _ny_ = 700;
-        const int _nz_ = 50;
+        const int _nz_ = 120;
 
 #endif
 
