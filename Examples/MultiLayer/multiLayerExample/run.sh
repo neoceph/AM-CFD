@@ -7,9 +7,6 @@ inputNames="inputfile.k"
 logString="Log_MultiLayer"
 export OMP_NUM_THREADS=18
 
-# ulimit -v 8,388,608,000
-ulimit -v 8388608000
-
 # Provide appropiate paths
 execDirec="./"
 execFile="../../../build/AM-CFD"
