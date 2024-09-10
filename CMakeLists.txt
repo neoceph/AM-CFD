@@ -50,6 +50,9 @@ set(CMAKE_C_STANDARD 99)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
+set(CMAKE_C_FLAGS_DEBUG "-g -DDEBUG")
+set(CMAKE_CXX_FLAGS_DEBUG "-g -DDEBUG")
+
 # check if openMP compilers are available and link them
 find_package(OpenMP)
 if (OPENMP_FOUND)
@@ -204,8 +207,8 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules/version.cpp.in
 configure_file(
    ${PROJECT_SOURCE_DIR}/versionForSourcePackage.cmake.in
    ${PROJECT_BINARY_DIR}/versionForSourcePackage.cmake @ONLY)
-set(version_file "${CMAKE_CURRENT_BINARY_DIR}/version.cpp")
 
+set(version_file "${CMAKE_CURRENT_BINARY_DIR}/version.cpp")
 set(source_files "${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp")
 
 #Add the version_file to the project build.

@@ -25,7 +25,8 @@ using namespace std;
 int main(int arg, char *argv[])
 {
 
-
+    VersionInfo version;
+    
     // make sure user provides an input file
     if (arg != 2)
     {
@@ -36,12 +37,12 @@ int main(int arg, char *argv[])
 
     if (strcmp(argv[1], "--version") == 0)
     {
-        std::cout << gGIT_VERSION << std::endl;
+        version.getVersionInfo(argv[1]);
     }
 
     else if (strcmp(argv[1], "-v") == 0)
     {
-        std::cout << gGIT_VERSION_SHORT << std::endl;
+        version.getVersionInfo(argv[1]);
     }
 
     else

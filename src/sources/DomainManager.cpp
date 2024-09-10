@@ -166,6 +166,7 @@ DomainManager::assignInputValues()
     {
         if (!meshObj_->volheatsourcetable_)
         {
+            alaspow_ = meshObj_->volheatsource_params_[0];
             avolpow_ = meshObj_->volheatsource_params_[0];
             apowseta_ = meshObj_->volheatsource_params_[1];
             heatthick_ = meshObj_->volheatsource_params_[2];
@@ -176,6 +177,7 @@ DomainManager::assignInputValues()
         else 
         {
             getHeatSourceParameters();
+            alaspow_ = meshObj_->volheatsource_params_[0];
             avolpow_ = heatSourceParameterValues[0][1];
             apowseta_ = heatSourceParameterValues[0][2];
             heatthick_ = heatSourceParameterValues[0][3];

@@ -1688,6 +1688,8 @@ CFDSolverManager::calculateSource(int &ivar)
             double apowseta = 0;
             double heatthick = 0;
             double heatrb = 0;
+            double volumetricEnergyDensity = 0;
+            double oldSourceInput = 0;
 
             // grab some stuff from the bc
             double beamposx = bcMgr_->beamposx_;
@@ -1731,8 +1733,13 @@ CFDSolverManager::calculateSource(int &ivar)
                         {
                             if(z_[nkm1] - z_[k] <= heatthick)  
                             {
-                                sourceinput_[(k*nj*ni)+(j*ni)+i] = avolpow*avolfact/M_PI/(heatrb*heatrb)/heatthick* 
-                                                     apowseta*exp(-avolfact/(heatrb*heatrb)*
+                                // sourceinput_[(k*nj*ni)+(j*ni)+i] = avolpow*avolfact/M_PI/(heatrb*heatrb)/heatthick* 
+                                //                      apowseta*exp(-avolfact/(heatrb*heatrb)*
+                                //                     (((beamposx-x_[i])*(beamposx-x_[i])) + 
+                                //                     ((beamposy-y_[j])*(beamposy-y_[j]))))*(double)bcMgr_->powerindicator_;
+                                // oldSourceInput = sourceinput_[(k*nj*ni)+(j*ni)+i];
+                                volumetricEnergyDensity = apowseta*avolpow/(heatrb*heatrb)/domainMgr_->scanvel_;
+                                sourceinput_[(k*nj*ni)+(j*ni)+i] = volumetricEnergyDensity*exp(-avolfact/(heatrb*heatrb)*
                                                     (((beamposx-x_[i])*(beamposx-x_[i])) + 
                                                     ((beamposy-y_[j])*(beamposy-y_[j]))))*(double)bcMgr_->powerindicator_;
 
